@@ -1,26 +1,52 @@
 * {
     color:#fff;
     box-sizing: border-box;
-    font-family: montserrat;
+    font-family: 'Spartan', sans-serif;
     font-size:12px;
+}
+
+::selection {
+    background-color: #d2bba9;
+    color: #ededed;
+}
+
+.logo {
+    position: absolute;
+    right: 59px;
+    top: 27px;
+}
+
+#left > h2, #left > .desc {
+    margin-left:50px;
 }
 
 #hdng {
     text-align: center;
-    font-size: 12px;
-    padding-top:30px;
+    font-size: 20px;
+    padding:30px 0;
     font-weight: 400; 
-    color: #000000;
+    color: #d2bba9;
+    letter-spacing: -0.06em;
 }
 
 h2 {
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 600;
-    letter-spacing: -0.02em;
+    letter-spacing: -0.06em;
+    text-transform: none;
 }
 
 .desc {
     font-size:10px;
+    text-transform:uppercase;
+    letter-spacing:0.32em;
+    font-size:7px;
+}
+
+@media (max-width: 800px) {
+    #right > h2, #right > .desc {
+    text-align: center;
+    }
 }
 
 /* Beginning of Flexbox styles */
@@ -34,24 +60,55 @@ h2 {
 }
 
 #left {
-    background-color: #272a32;
+    background-color: #333333;
     padding: 10px 10px;
     flex-basis:500px;
+    position:relative;
+    
     
 }
 
 #right {
-    background-color: #1d1e22;
-    padding: 10px 10px;
-    flex-basis: 500px;
+    background-color: #d2bba9;
+    padding: 7px 20px;
+    flex-basis: 280px;
+    margin-left:8px;
+    height:400px;
+    align-self: center;
+    overflow: hidden;
+}
 
+@media (max-width: 1000px) {
+    #right {
+        flex-basis:539.2px;
+        margin-left:0px;
+        margin-bottom:20px;
+        }
+}
+
+.addy {
+    text-transform:uppercase;
+    letter-spacing:0.32em;
+    font-size:7px;
+    padding-bottom:70px;
+}
+
+@media (max-width: 1000px) {
+    .addy {
+        text-align:center;
+        }
 }
 
 /* End of Flexbox styles */
 
 /*Form styles */
+
+form {
+    margin: 0 50px;
+}
+
 input[placeholder] {
-    color:#fff;
+    color:#515151;
 }
 
 input {
@@ -60,26 +117,47 @@ input {
     border-bottom: 1px #fff solid;
     margin: 10px 0;
     padding: 10px  0;
+    color: #fff;
 }
 
 textarea {
     background-color: transparent;
     border: 0;
     border-bottom: 1px #fff solid;
+    resize: none;
+    padding-top: 15px;
+}
+
+textarea[placeholder] {
+    color:#515151;
 }
 
 input:focus {
-    border-color: green;
+    border-color: #d2bba9;
     outline: none;
+    color:#fff;
 }
 
 textarea:focus {
     outline: none;
-    border-color: green;
+    border-color: #d2bba9;
+    color: #fff;
 }
 
 input[type="submit"] {
     border: 1px #fff solid;
-    padding: 10px;   
+    padding: 15px 0;
+    text-transform: uppercase;
+    font-size: 6px;
+    letter-spacing:0.32em;
+    width:100%;
+    margin-bottom:20px;
+    margin-top:20px;
+    }
+
+input[type="submit"]:hover {
+    background-color: #d2bba9;
+    border: 1px solid #d2bba9;
+    color: #333333;
 }
 /* End of form Styles */
