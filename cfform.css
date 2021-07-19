@@ -43,7 +43,7 @@ h2 {
     font-size:7px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
     #right > h2, #right > .desc {
     text-align: center;
     }
