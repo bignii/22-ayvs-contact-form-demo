@@ -55,8 +55,13 @@ h2 {
     display:flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 0 50px;
-    
+    margin: 0 50px; 
+}
+
+@media (max-width: 1000px) {
+    #cntctfrm {
+        margin: 0;
+        }
 }
 
 #left {
@@ -81,7 +86,7 @@ h2 {
 @media (max-width: 1000px) {
     #right {
         flex-basis:539.2px;
-        margin-left:0px;
+        margin-left:0;
         margin-bottom:20px;
         }
 }
