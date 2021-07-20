@@ -61,7 +61,6 @@ h2 {
 @media (max-width: 1000px) {
     #cntctfrm {
         margin: 0;
-        flex-direction:column;
         }
 }
 
