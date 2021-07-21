@@ -89,7 +89,7 @@ h2 {
 
 @media (max-width: 1000px) {
     #right {
-        flex-basis:539.2px;
+        flex-basis:500px;
         margin-left:0;
         margin-bottom:20px;
         }
@@ -120,6 +120,12 @@ input[placeholder] {
     color:#515151;
 }
 
+@media (max-width: 1000px) {
+    form {
+        margin: 0 10px;;
+        }
+}
+
 input {
     background-color: transparent;
     border: 0;
@@ -127,6 +133,7 @@ input {
     margin: 10px 0;
     padding: 10px  0;
     color: #fff;
+    width:100%;
 }
 
 textarea {
@@ -135,9 +142,11 @@ textarea {
     border-bottom: 1px #fff solid;
     resize: none;
     padding-top: 15px;
+    width:100%;
+    color:#fff;
 }
 
-textarea[placeholder] {
+textarea[placeholder="Enter Your Message Here"] {
     color:#515151;
 }
 
@@ -187,5 +196,46 @@ button[type="submit"]:hover {
     background-color: #d2bba9;
     border: 1px solid #d2bba9;
     color: #333333;
+}
+
+#status {
+    font-size:6px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.32em;
+    padding-bottom: 7px;
+}
+
+#status.success {
+    color:green;
+    animation: status 4s ease forwards;
+}
+
+#status.error {
+    color:red;
+    animation: status 4s ease forwards;
+}
+
+@keyframes status {
+    0%{
+        opacity:0;
+        pointer-events: all;
+    }
+
+    25%{
+        opacity:1;
+        pointer-events: all;
+    }
+
+    75%{
+        opacity:1;
+        pointer-events: all;
+    }
+
+    100%{
+        opacity:0;
+        pointer-events: none;
+    }
+}
 
 /* End of form Styles */
